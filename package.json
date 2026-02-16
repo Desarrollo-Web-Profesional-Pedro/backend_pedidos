@@ -4,6 +4,7 @@
   "description": "Servicio de Pedidos",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index.js",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "lint": "eslint src",
     "prepare": "husky install",
