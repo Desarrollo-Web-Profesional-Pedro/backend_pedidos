@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 import { describe, expect, test, beforeEach } from "@jest/globals";
+
+
 import {
   creaPedido,
   listaPedidos,
@@ -13,7 +15,13 @@ import {
 } from "../servicios/pedidos.js";
 import { Pedido } from "../bd/modelos/pedido.js";
 
+/**
+ * Pruebas unitarias para las operaciones CRUD de pedidos utilizando Jest y Mongoose.
+ * Estas pruebas verifican la creación, lectura, actualización y eliminación de pedidos en la base de datos.
+ * Se utilizan ejemplos de pedidos para validar el correcto funcionamiento de las funciones del servicio de pedidos.
+ */
 describe("Creando Pedidos", () => {
+  // Prueba para verificar que la creación de un pedido con todos los parámetros es exitosa.
   test("Con todos los parámetros será exitoso", async () => {
     const pedido = new Pedido({
       nombre: "Juan Gabriel Lopez",
@@ -33,8 +41,7 @@ describe("Creando Pedidos", () => {
     expect(foundPedido.updatedAt).toBeInstanceOf(Date);
   });
 
-  
-
+  // Prueba para verificar que la creación de un pedido sin el nombre requerido falla con un error de validación.
   test("Sin nombre debe fallar", async () => {
     const pedido = new Pedido({
       telefono: "4181231234",
@@ -53,6 +60,7 @@ describe("Creando Pedidos", () => {
     }
   });
 
+  // Prueba para verificar que la creación de un pedido con los parámetros mínimos requeridos es exitosa.
   test("Con parámetros mínimos debe ser exitoso", async () => {
     const pedido = new Pedido({
       nombre: "Juan Gabriel Lopez",
@@ -66,6 +74,7 @@ describe("Creando Pedidos", () => {
   });
 });
 
+// Ejemplos de pedidos para las pruebas de listado, actualización y eliminación.
 const ejemplosPedidos = [
 {
     nombre: 'Alfredo Lima Perú',
@@ -98,17 +107,25 @@ const ejemplosPedidos = [
     comentario:'NO Ha sido pagado el pedido en su totalidad',
 }];
 
+// Variable para almacenar los pedidos creados durante las pruebas.
 let creandoEjemplosPedidos = [];
 
+/**
+ * Función que se ejecuta antes de cada prueba para limpiar la colección de pedidos 
+ * y crear nuevos pedidos de ejemplo en la base de datos.
+ */
 beforeEach(async () => {
   await Pedido.deleteMany({});
   creandoEjemplosPedidos = [];
-  for (const pedidos of ejemplosPedidos) {
-    const creaPost = new Pedido(pedido);
+  for (const pedido of ejemplosPedidos) {
+    const creaPedido = new Pedido(pedido);
     creandoEjemplosPedidos.push(await creaPedido.save());
   }
 });
 
+/**
+ * 
+ */
 describe("Listando Pedidos", () => {
   test("Debe regresar todos los pedidos", async () => {
     const pedidos = await listaAllPedidos();

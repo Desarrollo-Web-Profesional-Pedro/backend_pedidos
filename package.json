@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "lint": "eslint src",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "Gabriel Barrón",
