@@ -58,7 +58,7 @@ El servidor corre en `http://localhost:3001`
 }
 ```
 
-![Crear pedido](https://github.com/user-attachments/assets/e2e611ac-5353-422c-acc7-99ad7b9379bc)
+![Crear pedido](https://github.com/user-attachments/assets/ef5929c8-52c7-4d16-8c09-023cbf35e8e1)
 
 ---
 
