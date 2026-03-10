@@ -97,7 +97,7 @@ El servidor corre en `http://localhost:3001`
 **GET** `/api/v1/pedidos/:id`
 
 ```
-GET http://localhost:3001/api/v1/pedidos/64f1a2b3c4d5e6f7a8b9c0d1
+GET http://localhost:3001/api/v1/pedidos/69af7a305845a0405abd0e83
 ```
 
 **Respuestas:**
@@ -124,7 +124,7 @@ GET http://localhost:3001/api/v1/pedidos/64f1a2b3c4d5e6f7a8b9c0d1
 - `200` — Pedido actualizado
 - `400` — ID inválido
 
-![Modificar pedido](docs/img/patch-pedido.png)
+![Modificar pedido](https://github.com/user-attachments/assets/941d5e8c-9443-4355-a10a-1cbd33e43cf2)
 
 ---
 
@@ -132,14 +132,14 @@ GET http://localhost:3001/api/v1/pedidos/64f1a2b3c4d5e6f7a8b9c0d1
 **DELETE** `/api/v1/pedidos/:id`
 
 ```
-DELETE http://localhost:3001/api/v1/pedidos/64f1a2b3c4d5e6f7a8b9c0d1
+DELETE http://localhost:3001/api/v1/pedidos/69af7df15845a0405abd0e8f
 ```
 
 **Respuestas:**
 - `204` — Eliminado correctamente
 - `404` — Pedido no encontrado
 
-![Eliminar pedido](docs/img/delete-pedido.png)
+![Eliminar pedido](https://github.com/user-attachments/assets/10bad19a-d2fa-47f1-ba13-4c4b800d00d2)
 
 ---
 
