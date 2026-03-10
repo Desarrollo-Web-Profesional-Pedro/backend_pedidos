@@ -75,7 +75,7 @@ El servidor corre en `http://localhost:3001`
 
 > No se puede usar `nombre` y `pagado` al mismo tiempo.
 
-![Listar pedidos](docs/img/get-pedidos.png)
+![Listar pedidos](https://github.com/user-attachments/assets/4fafb7c3-4245-4470-be07-1d442fc8a79b)
 
 ---
 
