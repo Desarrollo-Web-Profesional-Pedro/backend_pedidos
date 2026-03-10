@@ -143,10 +143,3 @@ DELETE http://localhost:3001/api/v1/pedidos/69af7df15845a0405abd0e8f
 
 ---
 
-## Pruebas automatizadas
-
-```bash
-npm test
-```
-
-![Pruebas Jest](docs/img/jest-tests.png)
