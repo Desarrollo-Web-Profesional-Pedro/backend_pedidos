@@ -80,16 +80,16 @@ El servidor corre en `http://localhost:3001`
 ---
 
 ### Listar pedidos filtrados por nombre
-**GET** `/api/v1/pedidos?nombre=Juan`
+**GET** `/api/v1/pedidos?nombre=Pedro Uriel`
 
-![Filtrar por nombre](docs/img/get-pedidos-nombre.png)
+![Filtrar por nombre](https://github.com/user-attachments/assets/47e7ae5c-1d8a-480e-b2df-2125b7cf1c6e)
 
 ---
 
 ### Listar pedidos filtrados por método de pago
 **GET** `/api/v1/pedidos?pagado=efectivo`
 
-![Filtrar por pagado](docs/img/get-pedidos-pagado.png)
+![Filtrar por pagado](https://github.com/user-attachments/assets/35a6d1ef-e6d4-42cf-a1c6-77bef818f750)
 
 ---
 
