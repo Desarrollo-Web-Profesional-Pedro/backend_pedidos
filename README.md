@@ -58,7 +58,7 @@ El servidor corre en `http://localhost:3001`
 }
 ```
 
-![Crear pedido](https://github.com/user-attachments/assets/ef5929c8-52c7-4d16-8c09-023cbf35e8e1)
+<img width="600" src="https://github.com/user-attachments/assets/ef5929c8-52c7-4d16-8c09-023cbf35e8e1" />
 
 ---
 
@@ -75,21 +75,21 @@ El servidor corre en `http://localhost:3001`
 
 > No se puede usar `nombre` y `pagado` al mismo tiempo.
 
-![Listar pedidos](https://github.com/user-attachments/assets/3ddde9a5-ce5e-44f6-bf11-84ace3c804d9)
+<img width="600" src="https://github.com/user-attachments/assets/3ddde9a5-ce5e-44f6-bf11-84ace3c804d9" />
 
 ---
 
 ### Listar pedidos filtrados por nombre
 **GET** `/api/v1/pedidos?nombre=Pedro Uriel`
 
-![Filtrar por nombre](https://github.com/user-attachments/assets/47e7ae5c-1d8a-480e-b2df-2125b7cf1c6e)
+<img width="600" src="https://github.com/user-attachments/assets/47e7ae5c-1d8a-480e-b2df-2125b7cf1c6e" />
 
 ---
 
 ### Listar pedidos filtrados por método de pago
 **GET** `/api/v1/pedidos?pagado=efectivo`
 
-![Filtrar por pagado](https://github.com/user-attachments/assets/35a6d1ef-e6d4-42cf-a1c6-77bef818f750)
+<img width="600" src="https://github.com/user-attachments/assets/35a6d1ef-e6d4-42cf-a1c6-77bef818f750" />
 
 ---
 
@@ -105,7 +105,7 @@ GET http://localhost:3001/api/v1/pedidos/69af7a305845a0405abd0e83
 - `400` — ID inválido
 - `404` — Pedido no encontrado
 
-![Obtener pedido por ID](https://github.com/user-attachments/assets/a179d7f8-5c6f-47b4-9c9b-0798a2489687)
+<img width="600" src="https://github.com/user-attachments/assets/a179d7f8-5c6f-47b4-9c9b-0798a2489687" />
 
 ---
 
@@ -124,7 +124,7 @@ GET http://localhost:3001/api/v1/pedidos/69af7a305845a0405abd0e83
 - `200` — Pedido actualizado
 - `400` — ID inválido
 
-![Modificar pedido](https://github.com/user-attachments/assets/941d5e8c-9443-4355-a10a-1cbd33e43cf2)
+<img width="600" src="https://github.com/user-attachments/assets/941d5e8c-9443-4355-a10a-1cbd33e43cf2" />
 
 ---
 
@@ -139,6 +139,14 @@ DELETE http://localhost:3001/api/v1/pedidos/69af7df15845a0405abd0e8f
 - `204` — Eliminado correctamente
 - `404` — Pedido no encontrado
 
-![Eliminar pedido](https://github.com/user-attachments/assets/10bad19a-d2fa-47f1-ba13-4c4b800d00d2)
+<img width="600" src="https://github.com/user-attachments/assets/10bad19a-d2fa-47f1-ba13-4c4b800d00d2" />
 
 ---
+
+## Pruebas automatizadas
+
+```bash
+npm test
+```
+
+![Pruebas Jest](docs/img/jest-tests.png)
