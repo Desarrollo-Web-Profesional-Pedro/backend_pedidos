@@ -74,13 +74,6 @@ export function pedidosRoutes(app) {
     const { id } = req.params;
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).json({ 
-            error: 'ID inválido', 
-            mensaje: `Se esperaban 24 caracteres, recibidos: ${id.length}` 
-        });
-    }
-
-    if (!mongoose.Types.ObjectId.isValid(id)) {
       return res.status(400).json({
         error: "ID inválido",
         mensaje: `Se esperaban 24 caracteres, recibidos: ${id.length}`,
