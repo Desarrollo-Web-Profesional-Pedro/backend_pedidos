@@ -142,11 +142,3 @@ DELETE http://localhost:3001/api/v1/pedidos/69af7df15845a0405abd0e8f
 ![Eliminar pedido](https://github.com/user-attachments/assets/10bad19a-d2fa-47f1-ba13-4c4b800d00d2)
 
 ---
-
-## Pruebas automatizadas
-
-```bash
-npm test
-```
-
-![Pruebas Jest](docs/img/jest-tests.png)
