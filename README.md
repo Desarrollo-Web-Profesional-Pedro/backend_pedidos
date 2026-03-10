@@ -105,7 +105,7 @@ GET http://localhost:3001/api/v1/pedidos/64f1a2b3c4d5e6f7a8b9c0d1
 - `400` — ID inválido
 - `404` — Pedido no encontrado
 
-![Obtener pedido por ID](docs/img/get-pedido-id.png)
+![Obtener pedido por ID](https://github.com/user-attachments/assets/a179d7f8-5c6f-47b4-9c9b-0798a2489687)
 
 ---
 
