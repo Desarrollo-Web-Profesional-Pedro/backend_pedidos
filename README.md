@@ -24,21 +24,6 @@ El servidor corre en `http://localhost:3001`
 
 ---
 
-## Modelo de Pedido
-
-| Campo            | Tipo     | Requerido | Descripción                        |
-|------------------|----------|-----------|------------------------------------|
-| `nombre`         | String   | Sí        | Nombre del cliente                 |
-| `telefono`       | String   | Sí        | Teléfono del cliente (10 dígitos)  |
-| `fecha_solicitud`| Date     | Sí        | Fecha en que se solicitó el pedido |
-| `fecha_envio`    | Date     | Sí        | Fecha de entrega del pedido        |
-| `total`          | Number   | No        | Total del pedido (default: 0.0)    |
-| `pagado`         | [String] | No        | Métodos de pago utilizados         |
-| `abono`          | Number   | No        | Monto abonado                      |
-| `comentario`     | String   | No        | Comentarios adicionales            |
-
----
-
 ## Endpoints
 
 ### Crear un pedido
