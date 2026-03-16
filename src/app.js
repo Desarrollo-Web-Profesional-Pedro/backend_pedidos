@@ -1,7 +1,6 @@
 // backend/src/app.js
 import express from 'express'
 import cors from 'cors'
-import bodyParser from 'body-parser'
 
 import { pedidosRoutes } from './rutas/pedidos.js'
 import { usuarioRoutes } from './rutas/usuarios.js'
@@ -10,7 +9,7 @@ import { usuarioRoutes } from './rutas/usuarios.js'
 const app = express()
 // Configurar middlewares
 app.use(cors())
-app.use(bodyParser.json())
+app.use(express.json())
 
 // Configurar rutas
 pedidosRoutes(app)
