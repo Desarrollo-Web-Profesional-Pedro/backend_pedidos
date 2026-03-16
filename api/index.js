@@ -1,18 +1,18 @@
 import dotenv from 'dotenv'
 dotenv.config()
 
+import mongoose from 'mongoose'
 import { app } from '../src/app.js'
-import { initBaseDeDatos } from '../src/bd/init.js'
 
-let conectado = false
+let isConnected = false
 
-async function conectar() {
-  if (!conectado) {
-    await initBaseDeDatos()
-    conectado = true
-  }
+async function dbConnect() {
+  if (isConnected) return
+  await mongoose.connect(process.env.DATABASE_URL)
+  isConnected = true
 }
 
-await conectar()
-
-export default app
+export default async function handler(req, res) {
+  await dbConnect()
+  return app(req, res)
+}
